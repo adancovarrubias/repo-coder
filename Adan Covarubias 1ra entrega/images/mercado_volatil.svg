@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo -->
+    <rect width="400" height="300" fill="#f4f7fa"/>
+    
+    <!-- Gráfico de línea volátil -->
+    <path d="M50 150 Q100 50 150 200 Q200 100 250 250 Q300 50 350 150" 
+          fill="none" 
+          stroke="#004e89" 
+          stroke-width="4"/>
+    
+    <!-- Línea de tendencia -->
+    <line x1="50" y1="150" x2="350" y2="150" 
+          stroke="#002b5b" 
+          stroke-width="2" 
+          stroke-dasharray="5,5"/>
+    
+    <!-- Flechas de volatilidad -->
+    <path d="M175 80 L185 60 L195 80" fill="none" stroke="#003666" stroke-width="2"/>
+    <path d="M225 220 L235 240 L245 220" fill="none" stroke="#003666" stroke-width="2"/>
+</svg>

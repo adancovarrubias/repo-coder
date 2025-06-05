@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel='stylesheet' href='../css/styles.css'>
+</head>
+<body>
+    <header>
+        <h1>BaseCamp Finance</h1>
+        <nav>
+            <a href='index.html'>Home</a> | 
+            <a href='quienes_somos.html'>¿Quiénes Somos?</a> | 
+            <a href='que_hacemos.html'>¿Qué Hacemos?</a> | 
+            <a href='por_que_lo_hacemos.html'>¿Por qué lo hacemos?</a> | 
+            <a href='contacto.html'>Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <p>Contáctanos para descubrir cómo podemos ayudar a proteger y optimizar tus finanzas empresariales:</p>
+        <ul>
+            <li>Email: contacto@basecampfinance.com</li>
+            <li>Teléfono: +52 123 456 7890</li>
+        </ul>
+        
+        <form action="#" method="POST" class="formulario-contacto">
+            <div class="form-grupo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="empresa">Nombre de la empresa:</label>
+                <input type="text" id="empresa" name="empresa" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="form-grupo">
+                <label for="servicio">Servicio de interés:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="cobertura_divisas">Cobertura de divisas</option>
+                    <option value="gestion_riesgos">Gestión de riesgos financieros</option>
+                    <option value="commodities">Cobertura de commodities</option>
+                    <option value="asesoria">Asesoría financiera general</option>
+                </select>
+            </div>
+
+            <div class="form-grupo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="boton-enviar">Enviar mensaje</button>
+        </form>
+
+        <img src='../images/contacto.svg' alt='Imagen de contacto'>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com/basecampfinance" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/basecampfinance" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/company/basecampfinance" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/basecampfinance" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 BaseCamp Finance. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo -->
+    <rect width="400" height="300" fill="#f4f7fa"/>
+    
+    <!-- Personas (siluetas) -->
+    <circle cx="150" cy="100" r="30" fill="#004e89"/>
+    <circle cx="200" cy="100" r="30" fill="#003666"/>
+    <circle cx="250" cy="100" r="30" fill="#004e89"/>
+    
+    <!-- Cuerpos simplificados -->
+    <rect x="135" y="130" width="30" height="60" fill="#004e89"/>
+    <rect x="185" y="130" width="30" height="60" fill="#003666"/>
+    <rect x="235" y="130" width="30" height="60" fill="#004e89"/>
+    
+    <!-- Mesa de reuniones -->
+    <rect x="100" y="200" width="200" height="40" fill="#002b5b" rx="5"/>
+</svg>

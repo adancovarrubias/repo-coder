@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo -->
+    <rect width="400" height="300" fill="#f4f7fa"/>
+    
+    <!-- Sobre -->
+    <path d="M50 80 L350 80 L350 220 L50 220 Z" fill="#004e89"/>
+    <path d="M50 80 L200 150 L350 80" fill="none" stroke="#f4f7fa" stroke-width="8"/>
+    
+    <!-- Línea del sobre -->
+    <path d="M50 80 L200 150 L350 80 L350 220 L50 220 Z" fill="none" stroke="#002b5b" stroke-width="4"/>
+    
+    <!-- Icono de teléfono -->
+    <circle cx="200" cy="150" r="40" fill="#003666"/>
+    <path d="M180 150 Q200 130 220 150 Q200 170 180 150" fill="#f4f7fa"/>
+</svg>
