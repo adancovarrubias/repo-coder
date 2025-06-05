@@ -2,101 +2,177 @@
 <html lang='es'>
 <head>
     <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¿Qué Hacemos?</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel='stylesheet' href='../css/styles.css'>
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='../pages/styles.css'>
 </head>
 <body>
-    <header>
-        <h1>BaseCamp Finance</h1>
-        <nav>
-            <a href='index.html'>Home</a> | 
-            <a href='quienes_somos.html'>¿Quiénes Somos?</a> | 
-            <a href='que_hacemos.html'>¿Qué Hacemos?</a> | 
-            <a href='por_que_lo_hacemos.html'>¿Por qué lo hacemos?</a> | 
-            <a href='contacto.html'>Contacto</a>
-        </nav>
+    <header class="bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">BaseCamp Finance</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="quienes_somos.html">¿Quiénes Somos?</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="que_hacemos.html">¿Qué Hacemos?</a></li>
+                            <li class="nav-item"><a class="nav-link" href="por_que_lo_hacemos.html">¿Por qué lo hacemos?</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>¿Qué ofrecemos?</h2>
-        <p>En BaseCamp Finance diseñamos estrategias integrales para la prevención y gestión de riesgos financieros. Nos especializamos en coberturas relacionadas con tipo de cambio, tasas de interés y commodities.</p>
 
-        <section class="servicios-principales">
-            <h2>Nuestros Servicios Principales</h2>
+    <main class="container py-5">
+        <h1 class="text-center mb-4">¿Qué ofrecemos?</h1>
+        <p class="lead text-center mb-5">En BaseCamp Finance diseñamos estrategias integrales para la prevención y gestión de riesgos financieros. Nos especializamos en coberturas relacionadas con tipo de cambio, tasas de interés y commodities.</p>
+
+        <section class="servicios-principales mb-5">
+            <h2 class="text-center mb-4">Nuestros Servicios Principales</h2>
             
-            <div class="servicio">
-                <h3>Gestión de Riesgo Financiero</h3>
-                <p>Desarrollamos estrategias personalizadas para proteger su empresa contra la volatilidad del mercado, incluyendo coberturas cambiarias, tasas de interés y materias primas.</p>
-                <div class="servicio-icono">🛡️</div>
-            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="servicio-icono mb-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="card-title h4">Gestión de Riesgo Financiero</h3>
+                            <ul class="custom-list text-start">
+                                <li>Análisis de exposición a riesgos</li>
+                                <li>Estrategias de cobertura</li>
+                                <li>Monitoreo continuo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="servicio">
-                <h3>Consultoría Estratégica</h3>
-                <p>Asesoramos en la toma de decisiones financieras críticas, optimización de estructura de capital y planificación financiera a largo plazo.</p>
-                <div class="servicio-icono">📊</div>
-            </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="servicio-icono mb-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="card-title h4">Consultoría Estratégica</h3>
+                            <ul class="custom-list text-start">
+                                <li>Optimización de capital</li>
+                                <li>Planificación financiera</li>
+                                <li>Asesoría en decisiones</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="servicio">
-                <h3>Análisis Predictivo de Mercados</h3>
-                <p>Utilizamos tecnología avanzada y análisis de datos para anticipar tendencias del mercado y oportunidades de inversión.</p>
-                <div class="servicio-icono">📈</div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="servicio-icono mb-3">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="card-title h4">Análisis Predictivo</h3>
+                            <ul class="custom-list text-start">
+                                <li>Tendencias de mercado</li>
+                                <li>Oportunidades de inversión</li>
+                                <li>Análisis de datos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="servicios-detallados">
-            <h3>Servicios Detallados:</h3>
-            <ul>
-                <li>Análisis de riesgos: exposición a divisas, tasas, materias primas.</li>
-                <li>Diseño de políticas y estrategias de cobertura personalizadas.</li>
-                <li>Implementación de coberturas con futuros, opciones y swaps.</li>
-                <li>Monitoreo y reevaluación periódica de resultados.</li>
-                <li>Capacitación a equipos internos en gestión de riesgos.</li>
-            </ul>
+        <section class="servicios-detallados bg-light p-4 rounded mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3 class="mb-3">Servicios Detallados:</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="fas fa-check-circle text-primary me-2"></i>Análisis de riesgos: exposición a divisas, tasas, materias primas.</li>
+                        <li class="list-group-item"><i class="fas fa-check-circle text-primary me-2"></i>Diseño de políticas y estrategias de cobertura personalizadas.</li>
+                        <li class="list-group-item"><i class="fas fa-check-circle text-primary me-2"></i>Implementación de coberturas con futuros, opciones y swaps.</li>
+                        <li class="list-group-item"><i class="fas fa-check-circle text-primary me-2"></i>Monitoreo y reevaluación periódica de resultados.</li>
+                        <li class="list-group-item"><i class="fas fa-check-circle text-primary me-2"></i>Capacitación a equipos internos en gestión de riesgos.</li>
+                    </ul>
+                </div>
 
-            <h3>Modelo de ingresos:</h3>
-            <ul>
-                <li>Honorarios mensuales o trimestrales.</li>
-                <li>Esquemas híbridos: fee fijo + comisión por resultados.</li>
-                <li>Membresías escalonadas con distintos niveles de cobertura.</li>
-            </ul>
-
-            <img src='../images/infografia_cobertura.svg' alt='Infografía que explica nuestro proceso de cobertura'>
+                <div class="col-md-6 mb-4">
+                    <h3 class="mb-3">Modelo de ingresos:</h3>
+                    <div class="accordion" id="accordionIngresos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Honorarios Flexibles
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionIngresos">
+                                <div class="accordion-body">
+                                    <ul class="custom-list">
+                                        <li>Honorarios mensuales o trimestrales</li>
+                                        <li>Esquemas híbridos: fee fijo + comisión</li>
+                                        <li>Membresías escalonadas personalizadas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="faq">
-            <h2>Preguntas Frecuentes</h2>
-
-            <div class="faq-item">
-                <h3>¿Qué tamaño de empresa pueden atender?</h3>
-                <p>Trabajamos con empresas de todos los tamaños, desde startups hasta grandes corporaciones, adaptando nuestros servicios a las necesidades específicas de cada cliente.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>¿Cómo inician el proceso de consultoría?</h3>
-                <p>Comenzamos con una evaluación completa de su situación financiera actual y sus objetivos. Luego, desarrollamos un plan estratégico personalizado con recomendaciones específicas.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>¿Cuánto tiempo toma ver resultados?</h3>
-                <p>Los primeros resultados suelen verse en los primeros 3-6 meses, aunque algunos beneficios, como la protección contra riesgos, son inmediatos desde la implementación de las estrategias.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>¿Ofrecen capacitación a nuestro equipo?</h3>
-                <p>Sí, parte fundamental de nuestro servicio incluye la capacitación de su equipo financiero para que puedan comprender y participar activamente en la implementación de las estrategias.</p>
+        <section class="proceso-trabajo mb-5">
+            <h3 class="text-center mb-4">Nuestro Proceso de Trabajo</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="timeline custom-list">
+                        <li class="mb-4">
+                            <h4>1. Diagnóstico Inicial</h4>
+                            <p>Evaluación completa de la situación financiera y exposición a riesgos</p>
+                        </li>
+                        <li class="mb-4">
+                            <h4>2. Diseño de Estrategia</h4>
+                            <p>Desarrollo de plan personalizado de cobertura y gestión de riesgos</p>
+                        </li>
+                        <li class="mb-4">
+                            <h4>3. Implementación</h4>
+                            <p>Ejecución de estrategias y establecimiento de controles</p>
+                        </li>
+                        <li>
+                            <h4>4. Seguimiento y Ajuste</h4>
+                            <p>Monitoreo continuo y optimización de resultados</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-                <a href="https://facebook.com/basecampfinance" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/basecampfinance" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/company/basecampfinance" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/basecampfinance" target="_blank"><i class="fab fa-instagram"></i></a>
+
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="social-icons mb-3">
+                        <a href="https://facebook.com/basecampfinance" class="mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com/basecampfinance" class="mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://linkedin.com/company/basecampfinance" class="mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://instagram.com/basecampfinance" class="mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                    <p class="mb-0">&copy; 2025 BaseCamp Finance. Todos los derechos reservados.</p>
+                </div>
             </div>
-            <p>&copy; 2025 BaseCamp Finance. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
