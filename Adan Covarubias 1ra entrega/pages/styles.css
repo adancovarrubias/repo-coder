@@ -92,26 +92,74 @@ h1, h2, h3, h4, .nav-link {
     box-shadow: 0 4px 8px #0002;
 }
 
-/* iconos de servicios */
-.servicio-icon {
-    font-size: 2.5rem;
+/* Superposición en el header para legibilidad */
+.header-hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 540px;
+    height: 50vh;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.header-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(120deg, #004e89cc 60%, #002b5bcc 100%);
+    opacity: 0.7;
+    z-index: 1;
+}
+.header-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Botón principal destacado */
+.btn-contacto {
+    box-shadow: 0 4px 16px #002b5b22;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 2rem;
+}
+.btn-contacto:hover {
+    background: var(--celeste);
     color: var(--azul-principal);
+    box-shadow: 0 8px 24px #002b5b33;
+    transform: translateY(-2px) scale(1.04);
 }
 
-/* formularios */
-.form-control:focus {
-    border-color: var(--celeste);
-    box-shadow: 0 0 0 0.2rem #aad3df40;
+/* Cards de servicios con efecto hover */
+.servicios-resumen .card {
+    box-shadow: 0 2px 8px #004e8922;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border-radius: 1rem;
+}
+.servicios-resumen .card:hover {
+    box-shadow: 0 8px 24px #004e8944;
+    transform: translateY(-6px) scale(1.03);
 }
 
-/* redes sociales */
-.social-links a {
-    color: var(--azul-principal);
-    transition: color 0.3s;
+/* Separador visual */
+.separador-hero {
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
+}
+.separador-hero i {
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+    box-shadow: 0 2px 8px #004e8922;
 }
 
-.social-links a:hover {
-    color: var(--azul-oscuro);
+/* Footer más compacto en mobile */
+@media (max-width: 576px) {
+    footer.bg-light {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
 }
 
 /* responsive */
@@ -119,11 +167,18 @@ h1, h2, h3, h4, .nav-link {
     .navbar-brand { font-size: 1.25rem; }
     h1 { font-size: 2rem; }
     .contact-card { margin-bottom: 1rem; }
+    .header-hero {
+        min-height: 340px;
+        height: 38vh;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
 }
 
 /* fixes para safari */
 @media not all and (min-resolution:.001dpcm) { 
     .contact-card {
+        transform: translateZ(0);
         -webkit-transform: translateZ(0);
     }
 }
@@ -133,4 +188,68 @@ h1, h2, h3, h4, .nav-link {
     .btn-primary:hover {
         transform: translateY(-1px);
     }
+}
+
+/* Sección de servicios sobre fondo azul a todo el ancho */
+.servicios-resumen-section {
+    background: var(--azul-principal);
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 8px 32px #002b5b22;
+    min-height: 540px;
+    height: 50vh;
+    max-height: 900px;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+.servicios-resumen-section .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1200px;
+}
+@media (max-width: 768px) {
+    .servicios-resumen-section {
+        min-height: 340px;
+        height: auto;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+.servicios-resumen-section h2 {
+    color: #fff;
+    letter-spacing: 1px;
+}
+.card-servicio {
+    background: rgba(0, 46, 89, 0.92);
+    border: none;
+    box-shadow: 0 4px 24px #002b5b33;
+    border-radius: 1.2rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.card-servicio:hover {
+    box-shadow: 0 8px 32px #002b5b55;
+    transform: translateY(-8px) scale(1.04);
+}
+.card-servicio .card-title,
+.card-servicio .card-text {
+    color: #fff;
+}
+.card-servicio .card-text {
+    color: #e0e6ed;
+}
+.card-servicio .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+}
+.card-servicio .btn-outline-light:hover {
+    background: #fff;
+    color: var(--azul-principal);
 }
